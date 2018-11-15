@@ -1,0 +1,42 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "ctrl+r",
+        "command": "workbench.action.tasks.runTask"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "explorer.newFile"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "explorer.newFolder"
+    },
+    {
+        "key": "ctrl+shift+g shift+,",
+        "command": "-gitlens.diffLineWithPrevious",
+        "when": "editorTextFocus && gitlens:activeIsTracked && gitlens:keymap == 'chorded'"
+    },
+    {
+        "key": "ctrl+shift+g w",
+        "command": "-gitlens.diffLineWithWorking",
+        "when": "editorTextFocus && gitlens:activeIsTracked && gitlens:keymap == 'chorded'"
+    },
+    {
+        "key": "ctrl+shift+g ,",
+        "command": "-gitlens.diffWithPreviousInDiff",
+        "when": "gitlens:activeIsTracked && isInDiffEditor && gitlens:keymap == 'chorded'"
+    },
+    {
+        "key": "ctrl+shift+g g",
+        "command": "workbench.view.scm"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "-workbench.view.scm"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "bookmarks.toggleLabeled"
+    }
+]
